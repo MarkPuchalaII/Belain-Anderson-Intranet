@@ -1,0 +1,29 @@
+:root {
+  font-family: Verdana;
+  color: white;
+  background: #202020;
+  --primary: #79B0C4;
+  --secondary: #75c9b1;
+}
+
+body, html {
+  /* text & background settings */
+  text-align: center;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}

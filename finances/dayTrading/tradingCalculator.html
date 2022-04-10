@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>Day Trading</title>
+    <link rel='stylesheet' href=/styles.css>
+    <link rel='stylesheet' href=/finances/financesStyles.css>
+    <link rel='stylesheet' href=/components/headerAndFooterStyles.css>
+    <script src='/components/header.js' type ='text/javascript' defer></script>
+    <script src='/components/footer.js' type ='text/javascript' defer></script>
+    <script src='../finances.js' type ='text/javascript' defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main id='webAppMain'>
+      <div id='toolsets'>
+          <div class='tools'>
+              <div class='tools'>
+                  <h1 style='color: red'>Sell</h1>
+                  <input id='sell' type='text' placeholder='100' onkeyup='check(buy, sell)'>
+              </div>
+              <div class='tools'>
+                  <h1 style='color: green'>Buy</h1>
+                  <input id='buy' type='text' placeholder='100' onkeyup='check(buy, sell)'>
+              </div>
+        </div>
+            <div class='tools result'>
+                <h1 style='color: cyan'>Result</h1>
+                <div id='result'>
+                    <span id='±'>+$</span><span>1</span> at <span id='±'>+</span><span>1%</span>
+                  </div>
+              </div>
+          </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

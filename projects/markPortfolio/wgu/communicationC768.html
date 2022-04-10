@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/styles.css'>
+    <link rel='stylesheet' href='../../projectStyles.css'>
+    <link rel='stylesheet' href='/components/headerAndFooterStyles.css'>
+    <script src='/components/header.js' type ='text/javascript' defer></script>
+    <script src='/components/footer.js' type ='text/javascript' defer></script>
+    <script src='wgu.js' type ='text/javascript' defer></script>
+    <script>
+      const classTasks = 27
+      const classCredits = 3
+    </script>
+    <title>Communication</title>
+</head>
+<body onload="updateProgress()">
+  <header-component></header-component>
+  <main>
+
+    <div id='menu'>
+      <div>Deadline: 02/01/2022</div>
+      <div id='countdown'></div>
+      Tasks for today:
+      <div id='workload'>
+        <div id='fourSemesters'></div>
+        <div id='threeSemesters'></div>
+        <div id='twoSemesters'></div>
+        <div id='oneSemester'></div>
+      </div>
+    </div>
+
+    <div id='checklist'>
+      <ul id='checklistList'>
+        
+      </ul>
+    </div>
+
+    <div id=interface>
+      <ul>
+        <h1>Task 1</h1>
+        <h2>Describe your organization</h2>
+        <li><input type="checkbox" id="1" onchange='save("1")'>
+          <label for="1" title='The products or services your organization produces'>A1</label>
+        </li>
+        <li><input type="checkbox" id="2" onchange='save("2")'>
+          <label for="2" title='The size of your organization and its number of locations'>A2</label>
+        </li>
+        <li><input type="checkbox" id="3" onchange='save("3")'>
+          <label for="3" title='The industry of which your organization is a part'>A3</label>
+        </li>
+      
+        <h2 title='Identify the emerging technology, practice, or process that will be the subject of your white paper.'>Identify the subject</h2>
+        <li><input type="checkbox" id="4" onchange='save("4")'>
+          <label for="4" title='Review at least three works that have been written about your subject in the past five years. You will use this research to inform your white paper.'>B0</label>
+        </li>
+        <li><input type="checkbox" id="5" onchange='save("5")'>
+          <label for="5" title='Write a summary for each of the three works that you reviewed. The summary should include the title of the work, a discussion of the main topics, and an explanation of why the information is important.'>B1</label>
+        </li> 
+
+
+        <h2 title='The white paper should be 2–3 pages long'>Create a white paper</h2>
+        <li><input type="checkbox" id="6" onchange='save("6")'>
+            <label for="6" title='A thorough explanation of your chosen emerging technology, practice, or process, based on your research'>C1</label>
+        </li>
+        <li><input type="checkbox" id="7" onchange='save("7")'>
+            <label for="7" title='A compelling argument discussing how the emerging technology, practice, or process could benefit your organization'>C2</label>
+        </li>
+
+        <li><input type="checkbox" id="8" onchange='save("8")'>
+            <label for="8" title='Explain how the diction in the white paper is appropriate for its audience.'>D</label>
+        </li>
+      </ul>
+
+      <ul>
+        <h1>Task 2</h1>
+        <h2 title='Cover all the main arguments in your white paper. The executive summary should comply with the requirements listed in the learning resource for executive summaries and should be about one page long.'>executive summary</h2>
+        <li><input type="checkbox" id="9" onchange='save("9")'>
+          <label for="9" title='Explain how the audience for your executive summary affects the document’s tone and diction.'>A1</label>
+        </li>
+        <li><input type="checkbox" id="10" onchange='save("10")'>
+          <label for="10" title='Explain how the audience for your executive summary affects your use of industry jargon and technical information.'>A2</label>
+        </li>
+        <li><input type="checkbox" id="11" onchange='save("11")'>
+          <label for="11" title='Explain how concerns about message timing, message sensitivity, and message classification may affect your message audience and document distribution plan.'>A3</label>
+        </li>
+        
+        <h2 title='The press release should be about one page long and comply with the requirements listed in the learning resource for press releases.'>press release</h2>
+        <li><input type="checkbox" id="12" onchange='save("12")'>
+          <label for="12" title='Explain how the audience for your press release affects the document’s tone and diction.'>B1</label>
+        </li>
+        <li><input type="checkbox" id="13" onchange='save("13")'>
+          <label for="13" title='Explain how the audience for your press release affects your use of industry jargon and technical information.'>B2</label>
+        </li>
+        <li><input type="checkbox" id="14" onchange='save("14")'>
+          <label for="14"
+                 title='Explain how concerns about message timing, message sensitivity, and message classification may affect your message audience and document distribution plan.'>B3</label>
+        </li>
+        
+        <h2 title='Write a frequently asked questions (FAQ) document based on your white paper. The FAQ should comply with the requirements listed in the learning resource for FAQs and should cover 3–5 likely questions.'>FAQ</h2>
+        <li><input type="checkbox" id="15" onchange='save("15")'>
+          <label for="15" title='Explain how the audience for your FAQ affects the document’s tone and diction.'>C1</label>
+        </li>
+        <li><input type="checkbox" id="16" onchange='save("16")'>
+          <label for="16" title='Explain how the audience for your FAQ affects your use of industry jargon and technical information.'>C2</label>
+        </li>
+        <li><input type="checkbox" id="17" onchange='save("17")'>
+          <label for="17" title='Explain how concerns about message timing, message sensitivity, and message classification may affect your message audience and document distribution plan.'>C3</label>
+        </li>
+      </ul>
+
+      <ul>
+        <h1>Task 3</h1>
+        <h2 title='Write an email to your colleagues inviting them to attend a presentation based on your white paper. The email should comply with the requirements listed in the learning resource for emails.'>Email Colleagues</h2>
+        <li><input type="checkbox" id="18" onchange='save("18")'>
+          <label for="18" title='Explain how the audience for your email affects the email’s tone and diction.'>A1</label>
+        </li>
+        <li><input type="checkbox" id="19" onchange='save("19")'>
+          <label for="19" title='Explain how the audience for your email affects your use of industry jargon and technical information.'>A2</label>
+        </li>
+        <li><input type="checkbox" id="20" onchange='save("20")'>
+          <label for="20" title='Explain how concerns about message timing, message sensitivity, and message classification may possibly affect your message audience and document distribution plan.'>A3</label>
+        </li>
+        
+        <h2 title='Create a multimedia presentation using presentation software (e.g., PowerPoint). The presentation should contain the contents of your white paper'>Presentation</h2>
+        <li><input type="checkbox" id="21" onchange='save("21")'>
+          <label for="21" title='The presentation should have a minimum of five slides, including the title slide.'>B1</label>
+        </li>
+        <li><input type="checkbox" id="22" onchange='save("22")'>
+          <label for="22" title='At least two of the slides should include visual elements (photos, charts, graphs, etc.).'>B2</label>
+        </li>
+        <li><input type="checkbox" id="23" onchange='save("23")'>
+          <label for="23" title='Explain how the audience for your presentation affects its tone and diction.'>B3</label>
+        </li>
+        <li><input type="checkbox" id="24" onchange='save("24")'>
+          <label for="24" title='Explain how the audience for your presentation affects your use of industry jargon and technical information.'>B4</label>
+        </li>
+        
+        <h2 title='Create an audiovisual recording of your presentation, using Panopto. The video should show you delivering your presentation orally (suggested length of 5–10 minutes), as well as the multimedia presentation you created in part B. The presentation slides and you should both be visible on the screen throughout the video.'>Audiovisual Recording</h2>
+        <li><input type="checkbox" id="25" onchange='save("25")'>
+          <label for="25" title='The audiovisual recording should feature you visibly presenting the material (i.e., not in voiceover or embedded video) and should simultaneously capture both you and your multimedia presentation. The presentation should be clear and well organized, and you should demonstrate strong communication skills and represent a strong professional appearance. You must submit your multimedia presentation with this task'>C</label>
+        </li>
+      </ul>
+
+      <ul>
+        <h1>Citations</h1>
+        <li><input type="checkbox" id="26" onchange='save("26")'>
+          <label for="26" title='Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.'>
+            E
+          </label>
+        </li>
+
+        <li><input type="checkbox" id="27" onchange='save("27")'>
+            <label for="27" title='Demonstrate professional communication in the content and presentation of your submission.'>
+              F
+            </label>
+        </li>
+      </ul>
+    </div>
+
+    <div id='notifications'>
+      <h1>WGU links: </h1>
+
+      <a target='_blank' rel='noopener noreferrer' href='https://my.wgu.edu/courses/course/25880009'>Course Overview</a>
+      <a target='_blank' rel='noopener noreferrer' href='https://lrps.wgu.edu/provision/280895459'>Course Material</a>
+      <a target='_blank' rel='noopener noreferrer' href='https://tasks.wgu.edu/student/001329414/course/25880009/task/3265/overview'>Task 1</a>
+      <a target='_blank' rel='noopener noreferrer' href='https://tasks.wgu.edu/student/001329414/course/25880009/task/3266/overview'>Task 2</a>
+      <a target='_blank' rel='noopener noreferrer' href='https://tasks.wgu.edu/student/001329414/course/25880009/task/3267/overview'>Task 3</a>
+
+    </div>
+   
+  </main>
+  <footer-component></footer-component>
+</body>
+</html>

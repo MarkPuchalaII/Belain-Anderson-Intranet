@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>Finances</title>
+    <link rel='stylesheet' href=/styles.css>
+    <link rel='stylesheet' href=financesStyles.css>
+    <link rel='stylesheet' href=/components/headerAndFooterStyles.css>
+    <script src='/components/header.js' type ='text/javascript' defer></script>
+    <script src='/components/footer.js' type ='text/javascript' defer></script>
+    <script src='finances.js' type ='text/javascript' defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <div id='bills'>
+        <div id='zaila'>
+          <div>Zaila's bills </div>
+          <hr>
+          $<span id='zailaBills'></span> biweekly.
+        </div>
+
+        <div class='vr'></div>
+
+        <div id='mark'>
+          <div>Mark's bills </div>
+          <hr>
+          $<span id='markBills'></span> biweekly.
+        </div>
+      </div> 
+      
+      <div id='toolsets'>
+        <div class='tools'>
+          <h1>Dailies</h1>
+          <a href='dayTrading'>Day Trading</a>
+        </div>
+        
+        <div class='tools'>
+          <h1>Education</h1>
+          <a href='https://www.joinmeetkevin.com/courses/enrolled/688175'>MeetKevin</a>
+          <a href='https://www.levels.fyi'>levels.fyi</a>
+          <a href='https://www.investopedia.com/'>Investopedia</a>
+          <a href='https://www.startupschool.org/curriculum'>Y Combinator</a>
+        </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

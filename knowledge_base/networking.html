@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>Knowledge Base</title>
+    <link rel='stylesheet' href='/styles.css'>
+    <link rel='stylesheet' href='knowledgeBaseStyles.css'>
+    <link rel='stylesheet' href=/components/headerAndFooterStyles.css>
+    <script src='../components/header.js' type ='text/javascript' defer></script>
+    <script src='../components/footer.js' type ='text/javascript' defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    
+    <main>
+      <nav id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="microsoft.html">Microsoft</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="networking.html">Networking</a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="dailyPriorities.html">Priorities</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div id='content'>
+        <p>
+            One type of networking is <span title='Small Office Home Office'>SOHO</span>.
+            Never use WEP, for it is depricated.
+            Always ensure DHCP is enabled.
+        </p>
+
+        <p>
+            Crazy as it can sound, IoT has many steps.
+            Four main steps include: Train the digital assistant (recognizing your voice),
+            Connecting to the hub (usually comes with the devices),
+            Connecting the hub to WiFi,
+            and then using that hub to discover devices.
+        </p>
+
+        <p>
+            Configuring QoS can priorities certain types of traffic over others.
+            This can be useful for mitigating network resource issues.
+        </p>
+
+        <p>
+            After verifying a lack of network connectivity to both local resources and the Internet,
+            it's a good idea to do the following:
+            <ul>
+                <li>Check the LED lights on the NIC</li>
+                <li>Bring a "known-good" cable in case of physical faults.</li>
+                <li>Verify the IP configuration.</li>
+            </ul>
+        </p>
+      </div>
+      
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

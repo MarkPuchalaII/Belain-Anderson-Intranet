@@ -1,0 +1,91 @@
+#webAppMain {
+    display: grid;
+    justify-items: center;
+}
+
+#bills {
+    display: flex;
+}
+
+#bills * {
+    margin: 1rem;
+}
+
+.vr {
+    border: 1px solid #fff;
+    height: calc(100% - 2rem);
+    margin: 0;
+}
+
+#toolsets {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+h1 {
+    margin: 0.25rem;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: #303030;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.result {
+    flex-shrink: 1;
+}
+
+a {
+    display: flex;
+    justify-items: center;
+    text-align: left;
+    padding: 0.5rem;
+
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background: #505050;
+}
+
+a:hover {
+    background: #404040;
+}
+
+span { 
+    display: inline;
+    color: green;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 445px) {
+    #toolsets {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+input {
+    height: 2rem;
+    width: 70%;
+    border-radius: 0.25rem;
+    border-width: 0.1rem;
+    border-color: #989898;
+    background: #121212;
+
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: #838383;
+    opacity: 1;
+}

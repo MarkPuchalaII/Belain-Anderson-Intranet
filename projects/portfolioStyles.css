@@ -1,0 +1,27 @@
+#interface {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+#BusinessCore {
+grid-row: span 12;
+}
+#GeneralEducation {
+grid-row: span 10;
+}
+#BusinessManagement {
+grid-row: span 8;
+}
+#ITFundamentals {
+grid-row: span 2;
+}
+#Marketing {
+grid-row: span 8;
+}
+#HumanResources {
+grid-row: span 3;
+}
+
+p {
+    text-align: left; 
+    padding-left: 2rem;
+}

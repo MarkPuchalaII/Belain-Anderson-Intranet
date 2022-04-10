@@ -1,0 +1,13 @@
+header-component {
+  background: #121212;
+  font-size: 1.2rem;
+  display: flex;
+  place-items: center;
+  text-decoration: none;
+  min-height: 3rem;
+}
+
+footer-component {
+  background: #121212;
+  padding: 0.5em;
+}

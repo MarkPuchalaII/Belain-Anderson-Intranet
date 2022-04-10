@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+}
+
+.flexGroupItem {
+    /* CSS grids */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Button color & size */
+    background: #404040;
+    border-radius: 0.5rem;
+    min-width: 280px;
+
+
+    /* text properties */
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  #logo {
+    border-radius: 0.5rem;
+  }
+
+  .flexGroup {
+    grid-area: nav;
+    display: grid;
+    gap: 1rem;
+  }
+
+  #groupTitle {
+    display: none;
+  }
+  
+  #logo {
+    grid-area: logo;
+    max-width: 100%;
+  }
+
+@media only screen and (max-width: 560px) {
+       .flexGroup {
+        grid-template-rows: repeat(6, 4rem);
+      }
+    }
+    
+    @media only screen and (min-width: 561px) and (max-width: 840px) {
+      .flexGroup {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 5rem);
+      }
+    }
+    
+    @media only screen and (min-width: 840px) {
+      .flexGroup {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 6rem);
+      }
+    
+      #groupTitle {
+          display: block;
+          max-width: 70%;
+      }
+    
+      #logo {
+        display: flex;
+        max-height: 10rem;
+        max-width: 70%;
+      }
+    
+      #groupTitle h3 {
+        display: flex;
+        margin: 0;
+        min-width: 450px;
+        font-size: 3em;
+      }
+    
+    }
+    

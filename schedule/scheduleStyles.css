@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-areas:
+    'menu interface notifications'
+    'checklist interface notifications'
+    'checklist interface notifications';
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+  }
+
+  #interface {
+      grid-area: interface;
+  }
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 5rem);
+    grid-template-rows: repeat(5, 5rem);
+    gap: 1rem;
+    place-items: center;
+}
+
+.calendarDay {
+    height: 100%;
+    border-style: dotted;
+    border-color: white;
+}
+
+input {
+    width: 100%;
+}
